@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <script src="js/vendor/velocity.min.js"></script>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/octicons.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav id="headerCont">
+            <ul>
+                <li><p>Campaign</p></li>
+                <li><p>Leads and Customers</p></li>
+                <li><p>Reports</p></li>
+                <li><p>Tools</p></li>
+                <li><p>Settings</p></li>
+                <li><p>News</p></li>
+                <li><p>Help</p></li>
+            </ul>
+            <div id="logo">
+            </div>
+            <div id="infoButton">
+                <span class="mega-octicon octicon-info"></span>
+            </div>
+        </nav>
+
+        <nav id="sideCont">
+            <ul>
+                <li>
+                    <form id="radio">
+                        <span id="radiotitle" class="noselect displayed">Department</span>
+                        <div id="formCont">  
+                            <input type="radio" name="option" value="option1" id="option1" checked>
+                            <label for="option1">All</label>
+                            <br>
+                            <input type="radio" name="option" value="option2" id="option2">
+                            <label for="option2">Sales</label>
+                            <br>
+                            <input type="radio" name="option" value="option3" id="option3">
+                            <label for="option3">Service</label>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form id="radio">
+                        <span id="radiotitle" class="noselect displayed">Type</span>
+                        <div id="formCont">    
+                            <input type="radio" name="Second" value="Second1" id="Second1" checked>
+                            <label for="Second1">All</label>
+                            <br>
+                            <input type="radio" name="Second" value="Second2" id="Second2">
+                            <label for="Second2">5-Step</label>
+                            <br>
+                            <input type="radio" name="Second" value="Second3" id="Second3">
+                            <label for="Second3">One-Step</label>
+                            <br>
+                            <input type="radio" name="Second" value="Second4" id="Second4">
+                            <label for="Second4">Prebuilt</label>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form id="radio">
+                        <span id="radiotitle" class="noselect displayed">Channel</span>
+                        <div id="formCont">    
+                            <input type="radio" name="Third" value="Third1" id="Third1" checked>
+                            <label for="Third1">All</label>
+                            <br>
+                            <input type="radio" name="Third" value="Third2" id="Third2">
+                            <label for="Third2">Mail</label>
+                            <br>
+                            <input type="radio" name="Third" value="Third3" id="Third3">
+                            <label for="Third3">Multi</label>
+                            <br>
+                            <input type="radio" name="Third" value="Third4" id="Third4">
+                            <label for="Third4">Email</label>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form id="radio">
+                        <span id="radiotitle" class="noselect displayed">Source</span>
+                        <div id="formCont">    
+                            <input type="radio" name="Fourth" value="Fourth1" id="Fourth1" checked>
+                            <label for="Fourth1">All</label>
+                            <br>
+                            <input type="radio" name="Fourth" value="Fourth2" id="Fourth2">
+                            <label for="Fourth2">Dealer</label>
+                            <br>
+                            <input type="radio" name="Fourth" value="Fourth3" id="Fourth3">
+                            <label for="Fourth3">GM Direct</label>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form id="radio">
+                        <span id="radiotitle" class="noselect hidden">Brand</span>
+                        <div id="formCont">    
+                            <input type="radio" name="Fifth" value="Fifth1" id="Fifth1" checked>
+                            <label for="Fifth1">All</label>
+                            <br>
+                            <input type="radio" name="Fifth" value="Fifth2" id="Fifth2">
+                            <label for="Fifth2">Buick</label>
+                            <br>
+                            <input type="radio" name="Fifth" value="Fifth3" id="Fifth3">
+                            <label for="Fifth3">Cadillac</label>
+                            <br>
+                            <input type="radio" name="Fifth" value="Fifth4" id="Fifth4">
+                            <label for="Fifth4">Chevrolet</label>
+                            <br>
+                            <input type="radio" name="Fifth" value="Fifth5" id="Fifth5">
+                            <label for="Fifth5">GMC</label>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form id="radio">
+                        <span id="radiotitle" class="noselect hidden">Language</span>
+                        <div id="formCont">    
+                            <input type="radio" name="Sixth" value="Sixth1" id="Sixth1" checked>
+                            <label for="Sixth1">All</label>
+                            <br>
+                            <input type="radio" name="Sixth" value="Sixth2" id="Sixth2">
+                            <label for="Sixth2">English</label>
+                            <br>
+                            <input type="radio" name="Sixth" value="Sixth3" id="Sixth3">
+                            <label for="Sixth3">French</label>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <form id="radio">
+                        <span id="radiotitle" class="noselect displayed">Sort</span>
+                        <div id="formCont">    
+                            <input type="radio" name="Seventh" value="Seventh1" id="Seventh1" checked>
+                            <label for="Seventh1">Ascending</label>
+                            <br>
+                            <input type="radio" name="Seventh" value="Seventh2" id="Seventh2">
+                            <label for="Seventh2">Descending</label>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <div id="button">
+                        <div class="temp">
+                            <span style="vertical-align: middle;">Clear Filters</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="iconCont">
+                    <div id="icon1">
+                        <span class="mega-octicon octicon-versions"></span><br>
+                        <span class="iconText">Grid</span>
+                    </div>
+                    <div id="icon1">
+                        <span class="mega-octicon octicon-list-unordered"></span><br>
+                        <span class="iconText">List</span>
+                    </div>
+                </div>
+                </li>
+        </nav>
+
+        <section id="wrapper">
+            <div id="button2">
+                    <span class="mega-octicon octicon-three-bars"></span>
+                </div>
+            <div id="favWrapper">
+            </div>
+            <div id="search">
+                <form>
+                    <input id="searchBar" type="text" placeholder="Search">
+                </form>
+            </div>
+            <div id="gridWrapper">
+                <ul>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                    <li id="gridItem">
+                        <div class="temp">
+                        <div id="pic">
+                        </div>
+                        <div id="title">
+                            Business Elite Program - GMC
+                        </div>
+                        <div id="desc">
+                            Sales One-Step Multi GM GMC English
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                <div id="window">
+                </div>
+            </div>
+            <div id="footer">
+                <div id="pages">
+                    <span style="display: inline-block; vertical-align: middle; line-height: 30px;">256 Results<span style="padding:5px;" class="mega-octicon octicon-chevron-left"></span><span style="text-decoration:underline;">1 </span>of 26<span style="padding:5px;" class="mega-octicon octicon-chevron-right"></span></span>
+                </div>
+            </div>
+        </section>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

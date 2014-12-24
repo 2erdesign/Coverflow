@@ -1,0 +1,979 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.1em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.1em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    -webkit-user-select:none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'open sans condensed';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border: 1px solid black;
+    height: 300px;
+    margin: 20px auto;
+    width: 40%;
+    display: inline-block;
+    margin: 4%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+#wrapper {
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#first {
+    font-family: 'open sans condensed';
+    font-weight: bold;
+    color: white;
+    font-size: 16pt;
+    position: relative;
+}
+
+#button {
+    display: block;
+    width: 200px;
+    border-radius: 5px;
+    background: #5963dd;
+    height: 39px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    box-shadow: 0px 2px 5px black;
+    transition: box-shadow 0.15s ease-in, background 0.1s ease-in;
+    overflow: hidden;
+}
+
+#button:hover {
+    
+    background: #636ded;
+}
+
+#button:active {
+box-shadow: -0px 3px 8px black;
+}
+
+#iconCont {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #444444;
+    margin: auto;
+    position: relative;
+    top: 32%;
+}
+
+#icon1 {
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    transition: color 0.1s ease-in;
+    font-weight: bold;
+    width: 40%;
+}
+
+.mega-octicon {
+    transition: opacity 0.2s ease-in, font-size: 0.2s ease-in;
+}
+
+#icon1:hover > .mega-octicon {
+    opacity: 0.7;
+}
+
+#icon1:active > .mega-octicon {
+    font-size: 30pt;
+}
+
+#third {
+    background: url(BG.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#cover {
+    width: 195px;
+    border-radius: 10px;
+    background: #ffffff;
+    height: 254px;
+    margin: 15px auto;
+    box-shadow: 1px 1px 5px black;
+    padding-top: 10px;
+    transition: box-shadow 0.1s ease-in;
+    overflow: hidden;
+    position: relative;
+}
+
+.temp {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+}
+
+#pic {
+    width: 88%;
+    height: 50%;
+    margin: auto;
+    background: #9ea5ec;
+    z-index: 2;
+}
+
+#title {
+    font-weight: bold;
+    width: 86%;
+    text-align: left;
+    margin: 5px auto;
+    color: #4f58cf;
+    border-bottom: 1px solid black;
+    z-index: 2;
+}
+
+#desc {
+    font-weight: bold;
+    width: 86%;
+    text-align: left;
+    margin: 5px auto;
+    font-size: 10pt;
+    z-index: 2;
+}
+
+#cover:hover {
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+}
+
+#fourth {
+    background: url(BG.jpg);
+    background-size: cover;
+}
+
+#news {
+    width: 235px;
+    border-radius: 10px;
+    background: #ffffff;
+    height: 254px;
+    margin: 15px auto;
+    box-shadow: 1px 1px 5px black;
+    padding-top: 10px;
+    transition: box-shadow 0.1s ease-in;
+}
+
+#titlenews {
+    font-weight: bold;
+    width: 86%;
+    margin: 5px auto;
+    color: #444444;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+#descnews {
+    width: 86%;
+    margin: 5px auto 10px auto;
+    font-size: 10pt;
+    line-height: 100%;
+}
+
+#datenews {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#news:hover {
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+}
+
+#radio {
+    width: 60%;
+    margin: 30px 80px;
+    text-align: left;
+}
+
+[name=option] {
+    margin-left: 10px;
+}
+
+#radiotitle {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #444444;
+    width: 128px;
+    display: inline-block;
+    text-align: right;
+}
+
+#radiotitle {
+    font-size: 20pt; 
+    padding-top: 50px;
+    cursor: pointer;
+}
+
+#plus {
+    font-size: 16pt;
+    margin-right: 5px;
+}
+
+label {
+    line-height: 27px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label:before {
+    display: inline-block;
+    content: "";
+    background: url(radio.jpg);
+    background-size: 16px;
+    background-repeat: none;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-bottom: -2px;
+}
+
+input[type="radio"]:checked+label:before {
+    display: inline-block;
+    content: "";
+    background: url(radiochecked.jpg);
+    background-size: 16px;
+    background-repeat: none;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+#formCont {
+    height: auto;
+    width: auto;
+    margin: 5px 0 0 40px;
+}
+
+#sixth {
+    text-align: left;
+}
+
+#selectCont {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 30%;
+}
+
+#selectCont select {
+    width: 100%;
+    margin-top: 7px;
+    font-family: 'open sans condensed';
+    padding-left: 3px;
+
+}
+
+#assignee {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#button2 {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 75%;
+    left: 10%;
+}
+
+#window {
+    border-radius: 10px;
+    position: relative;
+    bottom: 0%;
+    left: 15%;
+    background: white;
+    box-shadow: 1px 1px 5px black;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: width 0.2s ease-in, height 0.15s ease-in;
+}
+
+.window {
+    width: 75% !important;
+    height: 70% !important;
+}
+
+.windowClose {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.display {
+    display: block !important;
+}
+
+#top {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+}
+
+#top p {
+    height: 100%;
+    vertical-align: middle;
+    margin: 0;
+    line-height: 4em;
+}
+
+#top ul {
+    display: inline-block;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#top li {
+    height: 100%;
+    display: inline-block;
+    width: 33.333333%;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    float: left;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#top li:hover {
+    background: #5963dd;
+    color: white;
+}
+
+#menuSelect:hover>#submenu {
+    height: auto;
+    max-height: 500px;
+}
+
+#submenu:hover {
+    height: auto;
+    max-height: 500px;
+}
+
+#submenu li:hover>p {
+    color: white !important;
+}
+
+#submenu {
+    height: 0;
+    max-height: 0;
+    background: white;
+    border-right: 1px solid black;
+    float: left;
+    overflow: hidden;
+    transition: max-height 0.7s ease-out;
+    margin-top: 1px;
+    width: 150%;
+}
+
+#submenu ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    float: left;
+}
+
+#submenu li {
+    font-size: 10pt;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+    height: 100%;
+    float: left;
+    width: 100%;
+}
+
+#submenu li p {
+    margin: 1em 0;
+    color: black;
+}
+
+#submenu li:hover {
+    background: #5963dd;
+    color: #444444;
+}
+
+#submenu p {
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+/*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
+.ink {
+    display: block; position: absolute;
+    background: #444444;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    z-index: 1;
+    opacity: 0.3;
+}
+/*animation effect*/
+.ink.animate{-webkit-animation: ripple 0.55s linear;
+-ms-animation: ripple 0.35s linear;}
+@-webkit-keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);}
+}
+@-ms-keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@font-face {
+  font-family: 'octicons';
+  src: url('octicons.eot?#iefix') format('embedded-opentype'),
+       url('octicons.woff') format('woff'),
+       url('octicons.ttf') format('truetype'),
+       url('octicons.svg#octicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+
+.octicon is optimized for 16px.
+.mega-octicon is optimized for 32px but can be used larger.
+
+*/
+.octicon, .mega-octicon {
+  font: normal normal normal 16px/1 octicons;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mega-octicon { font-size: 32pt; }
+
+
+.octicon-alert:before { content: '\f02d'} /*  */
+.octicon-alignment-align:before { content: '\f08a'} /*  */
+.octicon-alignment-aligned-to:before { content: '\f08e'} /*  */
+.octicon-alignment-unalign:before { content: '\f08b'} /*  */
+.octicon-arrow-down:before { content: '\f03f'} /*  */
+.octicon-arrow-left:before { content: '\f040'} /*  */
+.octicon-arrow-right:before { content: '\f03e'} /*  */
+.octicon-arrow-small-down:before { content: '\f0a0'} /*  */
+.octicon-arrow-small-left:before { content: '\f0a1'} /*  */
+.octicon-arrow-small-right:before { content: '\f071'} /*  */
+.octicon-arrow-small-up:before { content: '\f09f'} /*  */
+.octicon-arrow-up:before { content: '\f03d'} /*  */
+.octicon-beer:before { content: '\f069'} /*  */
+.octicon-book:before { content: '\f007'} /*  */
+.octicon-bookmark:before { content: '\f07b'} /*  */
+.octicon-briefcase:before { content: '\f0d3'} /*  */
+.octicon-broadcast:before { content: '\f048'} /*  */
+.octicon-browser:before { content: '\f0c5'} /*  */
+.octicon-bug:before { content: '\f091'} /*  */
+.octicon-calendar:before { content: '\f068'} /*  */
+.octicon-check:before { content: '\f03a'} /*  */
+.octicon-checklist:before { content: '\f076'} /*  */
+.octicon-chevron-down:before { content: '\f0a3'} /*  */
+.octicon-chevron-left:before { content: '\f0a4'} /*  */
+.octicon-chevron-right:before { content: '\f078'} /*  */
+.octicon-chevron-up:before { content: '\f0a2'} /*  */
+.octicon-circle-slash:before { content: '\f084'} /*  */
+.octicon-circuit-board:before { content: '\f0d6'} /*  */
+.octicon-clippy:before { content: '\f035'} /*  */
+.octicon-clock:before { content: '\f046'} /*  */
+.octicon-cloud-download:before { content: '\f00b'} /*  */
+.octicon-cloud-upload:before { content: '\f00c'} /*  */
+.octicon-code:before { content: '\f05f'} /*  */
+.octicon-color-mode:before { content: '\f065'} /*  */
+.octicon-comment-add:before,
+.octicon-comment:before { content: '\f02b'} /*  */
+.octicon-comment-discussion:before { content: '\f04f'} /*  */
+.octicon-credit-card:before { content: '\f045'} /*  */
+.octicon-dash:before { content: '\f0ca'} /*  */
+.octicon-dashboard:before { content: '\f07d'} /*  */
+.octicon-database:before { content: '\f096'} /*  */
+.octicon-device-camera:before { content: '\f056'} /*  */
+.octicon-device-camera-video:before { content: '\f057'} /*  */
+.octicon-device-desktop:before { content: '\f27c'} /*  */
+.octicon-device-mobile:before { content: '\f038'} /*  */
+.octicon-diff:before { content: '\f04d'} /*  */
+.octicon-diff-added:before { content: '\f06b'} /*  */
+.octicon-diff-ignored:before { content: '\f099'} /*  */
+.octicon-diff-modified:before { content: '\f06d'} /*  */
+.octicon-diff-removed:before { content: '\f06c'} /*  */
+.octicon-diff-renamed:before { content: '\f06e'} /*  */
+.octicon-ellipsis:before { content: '\f09a'} /*  */
+.octicon-eye-unwatch:before,
+.octicon-eye-watch:before,
+.octicon-eye:before { content: '\f04e'} /*  */
+.octicon-file-binary:before { content: '\f094'} /*  */
+.octicon-file-code:before { content: '\f010'} /*  */
+.octicon-file-directory:before { content: '\f016'} /*  */
+.octicon-file-media:before { content: '\f012'} /*  */
+.octicon-file-pdf:before { content: '\f014'} /*  */
+.octicon-file-submodule:before { content: '\f017'} /*  */
+.octicon-file-symlink-directory:before { content: '\f0b1'} /*  */
+.octicon-file-symlink-file:before { content: '\f0b0'} /*  */
+.octicon-file-text:before { content: '\f011'} /*  */
+.octicon-file-zip:before { content: '\f013'} /*  */
+.octicon-flame:before { content: '\f0d2'} /*  */
+.octicon-fold:before { content: '\f0cc'} /*  */
+.octicon-gear:before { content: '\f02f'} /*  */
+.octicon-gift:before { content: '\f042'} /*  */
+.octicon-gist:before { content: '\f00e'} /*  */
+.octicon-gist-secret:before { content: '\f08c'} /*  */
+.octicon-git-branch-create:before,
+.octicon-git-branch-delete:before,
+.octicon-git-branch:before { content: '\f020'} /*  */
+.octicon-git-commit:before { content: '\f01f'} /*  */
+.octicon-git-compare:before { content: '\f0ac'} /*  */
+.octicon-git-merge:before { content: '\f023'} /*  */
+.octicon-git-pull-request-abandoned:before,
+.octicon-git-pull-request:before { content: '\f009'} /*  */
+.octicon-globe:before { content: '\f0b6'} /*  */
+.octicon-graph:before { content: '\f043'} /*  */
+.octicon-heart:before { content: '\2665'} /* ♥ */
+.octicon-history:before { content: '\f07e'} /*  */
+.octicon-home:before { content: '\f08d'} /*  */
+.octicon-horizontal-rule:before { content: '\f070'} /*  */
+.octicon-hourglass:before { content: '\f09e'} /*  */
+.octicon-hubot:before { content: '\f09d'} /*  */
+.octicon-inbox:before { content: '\f0cf'} /*  */
+.octicon-info:before { content: '\f059'} /*  */
+.octicon-issue-closed:before { content: '\f028'} /*  */
+.octicon-issue-opened:before { content: '\f026'} /*  */
+.octicon-issue-reopened:before { content: '\f027'} /*  */
+.octicon-jersey:before { content: '\f019'} /*  */
+.octicon-jump-down:before { content: '\f072'} /*  */
+.octicon-jump-left:before { content: '\f0a5'} /*  */
+.octicon-jump-right:before { content: '\f0a6'} /*  */
+.octicon-jump-up:before { content: '\f073'} /*  */
+.octicon-key:before { content: '\f049'} /*  */
+.octicon-keyboard:before { content: '\f00d'} /*  */
+.octicon-law:before { content: '\f0d8'} /*  */
+.octicon-light-bulb:before { content: '\f000'} /*  */
+.octicon-link:before { content: '\f05c'} /*  */
+.octicon-link-external:before { content: '\f07f'} /*  */
+.octicon-list-ordered:before { content: '\f062'} /*  */
+.octicon-list-unordered:before { content: '\f061'} /*  */
+.octicon-location:before { content: '\f060'} /*  */
+.octicon-gist-private:before,
+.octicon-mirror-private:before,
+.octicon-git-fork-private:before,
+.octicon-lock:before { content: '\f06a'} /*  */
+.octicon-logo-github:before { content: '\f092'} /*  */
+.octicon-mail:before { content: '\f03b'} /*  */
+.octicon-mail-read:before { content: '\f03c'} /*  */
+.octicon-mail-reply:before { content: '\f051'} /*  */
+.octicon-mark-github:before { content: '\f00a'} /*  */
+.octicon-markdown:before { content: '\f0c9'} /*  */
+.octicon-megaphone:before { content: '\f077'} /*  */
+.octicon-mention:before { content: '\f0be'} /*  */
+.octicon-microscope:before { content: '\f089'} /*  */
+.octicon-milestone:before { content: '\f075'} /*  */
+.octicon-mirror-public:before,
+.octicon-mirror:before { content: '\f024'} /*  */
+.octicon-mortar-board:before { content: '\f0d7'} /*  */
+.octicon-move-down:before { content: '\f0a8'} /*  */
+.octicon-move-left:before { content: '\f074'} /*  */
+.octicon-move-right:before { content: '\f0a9'} /*  */
+.octicon-move-up:before { content: '\f0a7'} /*  */
+.octicon-mute:before { content: '\f080'} /*  */
+.octicon-no-newline:before { content: '\f09c'} /*  */
+.octicon-octoface:before { content: '\f008'} /*  */
+.octicon-organization:before { content: '\f037'} /*  */
+.octicon-package:before { content: '\f0c4'} /*  */
+.octicon-paintcan:before { content: '\f0d1'} /*  */
+.octicon-pencil:before { content: '\f058'} /*  */
+.octicon-person-add:before,
+.octicon-person-follow:before,
+.octicon-person:before { content: '\f018'} /*  */
+.octicon-pin:before { content: '\f041'} /*  */
+.octicon-playback-fast-forward:before { content: '\f0bd'} /*  */
+.octicon-playback-pause:before { content: '\f0bb'} /*  */
+.octicon-playback-play:before { content: '\f0bf'} /*  */
+.octicon-playback-rewind:before { content: '\f0bc'} /*  */
+.octicon-plug:before { content: '\f0d4'} /*  */
+.octicon-repo-create:before,
+.octicon-gist-new:before,
+.octicon-file-directory-create:before,
+.octicon-file-add:before,
+.octicon-plus:before { content: '\f05d'} /*  */
+.octicon-podium:before { content: '\f0af'} /*  */
+.octicon-primitive-dot:before { content: '\f052'} /*  */
+.octicon-primitive-square:before { content: '\f053'} /*  */
+.octicon-pulse:before { content: '\f085'} /*  */
+.octicon-puzzle:before { content: '\f0c0'} /*  */
+.octicon-question:before { content: '\f02c'} /*  */
+.octicon-quote:before { content: '\f063'} /*  */
+.octicon-radio-tower:before { content: '\f030'} /*  */
+.octicon-repo-delete:before,
+.octicon-repo:before { content: '\f001'} /*  */
+.octicon-repo-clone:before { content: '\f04c'} /*  */
+.octicon-repo-force-push:before { content: '\f04a'} /*  */
+.octicon-gist-fork:before,
+.octicon-repo-forked:before { content: '\f002'} /*  */
+.octicon-repo-pull:before { content: '\f006'} /*  */
+.octicon-repo-push:before { content: '\f005'} /*  */
+.octicon-rocket:before { content: '\f033'} /*  */
+.octicon-rss:before { content: '\f034'} /*  */
+.octicon-ruby:before { content: '\f047'} /*  */
+.octicon-screen-full:before { content: '\f066'} /*  */
+.octicon-screen-normal:before { content: '\f067'} /*  */
+.octicon-search-save:before,
+.octicon-search:before { content: '\f02e'} /*  */
+.octicon-server:before { content: '\f097'} /*  */
+.octicon-settings:before { content: '\f07c'} /*  */
+.octicon-log-in:before,
+.octicon-sign-in:before { content: '\f036'} /*  */
+.octicon-log-out:before,
+.octicon-sign-out:before { content: '\f032'} /*  */
+.octicon-split:before { content: '\f0c6'} /*  */
+.octicon-squirrel:before { content: '\f0b2'} /*  */
+.octicon-star-add:before,
+.octicon-star-delete:before,
+.octicon-star:before { content: '\f02a'} /*  */
+.octicon-steps:before { content: '\f0c7'} /*  */
+.octicon-stop:before { content: '\f08f'} /*  */
+.octicon-repo-sync:before,
+.octicon-sync:before { content: '\f087'} /*  */
+.octicon-tag-remove:before,
+.octicon-tag-add:before,
+.octicon-tag:before { content: '\f015'} /*  */
+.octicon-telescope:before { content: '\f088'} /*  */
+.octicon-terminal:before { content: '\f0c8'} /*  */
+.octicon-three-bars:before { content: '\f05e'} /*  */
+.octicon-tools:before { content: '\f031'} /*  */
+.octicon-trashcan:before { content: '\f0d0'} /*  */
+.octicon-triangle-down:before { content: '\f05b'} /*  */
+.octicon-triangle-left:before { content: '\f044'} /*  */
+.octicon-triangle-right:before { content: '\f05a'} /*  */
+.octicon-triangle-up:before { content: '\f0aa'} /*  */
+.octicon-unfold:before { content: '\f039'} /*  */
+.octicon-unmute:before { content: '\f0ba'} /*  */
+.octicon-versions:before { content: '\f064'} /*  */
+.octicon-remove-close:before,
+.octicon-x:before { content: '\f081'} /*  */
+.octicon-zap:before { content: '\26A1'} /* ⚡ */
